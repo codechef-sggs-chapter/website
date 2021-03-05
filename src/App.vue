@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <navigation-bar></navigation-bar>
+    <carousal-comp></carousal-comp>
+    <about-us id="aboutUs"></about-us>    
+    <event-comp id="events"></event-comp>
+    <resourses-comp></resourses-comp>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CarousalComp from "./components/layouts/carousal.vue"
+import NavigationBar from "./components/layouts/navigation.vue"
+import AboutUs from "./components/layouts/aboutus.vue"
+import EventComp from "./components/layouts/events.vue"
+import ResoursesComp from "./components/layouts/resourses.vue"
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    NavigationBar,
+    CarousalComp,
+    AboutUs,
+    ResoursesComp,
+    EventComp
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+<style >
+
+html{
+  background-color: rgb(61, 61, 61);
 }
+
 </style>
